@@ -1,0 +1,356 @@
+
+body {
+  background-color: black;
+}
+
+
+@media (max-width: 767px) {
+  .img-responsive {
+      max-width: 100%;
+      height: auto;
+  }
+}
+#full-img-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  overflow: auto;
+}
+
+#full-img-container img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 20px;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/avenger');
+.collapse.navbar-collapse .navbar-nav {
+    margin-left: 800px; /* This will move the ul element to the right */
+}
+
+.navbar {
+  background-image: linear-gradient( rgba(78, 33, 78, 0.7), rgba(0, 0, 0, 0.7)); /* Purple to Black gradient with opacity */
+
+}
+.navbar-brand{
+  font-family: 'Avenger Leftalic', sans-serif;
+}
+.navbar-brand:hover{
+  animation: shake 0.5s ease;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+.nav-item{
+    margin-right: 20px;
+    color: white;
+}
+.home {
+    background: url(image.png) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* เพิ่มคุณสมบัติ position เป็น relative */
+}
+.nav-item{
+  font-size: 20px;
+
+}
+.nav-item:hover{
+  color: white;
+}
+.fw-bolder {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+.container {
+  font-family: "Audiowide", sans-serif;
+                            
+    color: white;
+    position: absolute; /* เพิ่มคุณสมบัติ position เป็น absolute */
+    bottom: 60px; /* ปรับตำแหน่งลงมาจากด้านล่างของ .home */
+    left: 50%; /* ให้ข้อความอยู่ตรงกลาง */
+    transform: translateX(-50%); /* ให้ข้อความอยู่ตรงกลาง */
+    text-align: center; /* จัดวางข้อความตรงกลาง */
+
+}
+
+.button {
+  font-family: "Audiowide", sans-serif;
+  text-decoration: none;
+  background-color: #48274b; /* Green */
+  border: 3px solid black;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 200px;
+  transition: background-color 0.3s ease; 
+}
+.button:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #3e132d; /* Green */
+}
+/* Reset default margin and padding */
+* {
+  font-family: "Audiowide", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .about-me{
+    background-image: linear-gradient( rgba(78, 33, 78, 0.7), rgba(0, 0, 0, 0.7)); /* Purple to Black gradient with opacity */
+  }
+  .aboutt{
+    font-family: "Audiowide", sans-serif;
+    color: white;
+  }
+  
+  /* Styles for container */
+  .contain {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for profile picture */
+  .profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Styles for profile details */
+  .profile-details {
+    text-align: center;
+  }
+  
+  .profile-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .profile-picture img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .profile-details h1 {
+      font-size: 20px;
+    }
+  
+    .profile-details p {
+      font-size: 14px;
+    }
+  }
+
+  
+.footer{
+  color: white;
+  background-color: black;
+}
+
+/* end section */
+.end-section{
+    padding: 80px 19% 70px;
+    background-image: linear-gradient( rgba(78, 33, 78, 0.7), rgba(0, 0, 0, 0.7)); /* Purple to Black gradient with opacity */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.work{
+  padding-top: 20px; 
+}
+.col-sm-3{
+  padding-top: 20px; 
+}
+.end-section h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.name{
+  color: rgb(255, 255, 255);
+}
+.end-section p{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.end-section i{
+    height: 40px;
+    width: 40px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: 20px;
+    border-radius: 50%;
+    margin:0 9px;
+    transition: all ease .50s;
+}
+.end-section i:hover{
+    transform: translateY(-5px);
+
+    background: #48274b; /* Green */
+    border: 2px solid rgb(255, 255, 255);
+}
+.worked{
+background-color: rgb(0, 0, 0);
+color: white;
+}
+
+
+
+/* .work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+} */
+.col-sm-3{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.col-sm-3 img{
+  width: 100%;
+  border-radius:10px ;
+  display:block;
+  transition: transform 0.5s;
+}
+
+.col-sm-3:hover img{
+  transform: scale(1.1);
+}
+.col-sm-3:hover .layer{
+ height: 100%;
+}
+
+
+
+
+
+
+  /* Styles for footer */
+footer {
+    text-align: center; /* Align text in the center */
+    padding: 20px 0; /* Add some padding for spacing */
+  }
+
+  .btn {
+    margin-right: 5px; /* Add some right margin to create space between buttons */
+    margin-bottom: 10px;
+  }
+
+/* Add this CSS to your stylesheet */
+.gallery {
+  overflow: hidden;
+}
+
+.gallery .col-sm-3 {
+  margin-bottom: 30px; /* Adjust as needed */
+  margin-left: 10px;
+}
+
+/* Add this CSS to your stylesheet */
+.Armor,.Costume ,.figure,.Props,.Repaint,.weapon{
+  padding-top: 20px; /* Adjust as needed */
+  border-radius: 10rem;
+}
+/* Add this CSS to your stylesheet */
+.Armor img,.Costume img,.figure img,.Props img,.Repaint img,.weapon img{
+  border-radius: 1rem;
+}
+/* Add this CSS to your stylesheet */
+.Armor img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+.Costume img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+.figure img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+.Props img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+.Repaint img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+.weapon img:hover {
+  transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1000; /* Ensure the loading page is on top of other content */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #492042; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
